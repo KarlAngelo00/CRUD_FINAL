@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Task Manager</h1>
+    
+    <form id="task-form">
+        <input type="text" id="title" placeholder="Task Title" required>
+        <textarea id="description" placeholder="Task Description"></textarea>
+        <select id="status">
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <input type="date" id="due_date" required placeholder="Due Date"> <!-- New due date field -->
+        <button type="submit">Add Task</button>
+    </form>
+    
+    <ul id="task-list"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
